@@ -69,7 +69,7 @@ bugreports:
     steps-to-reproduce: |
       1.Открыть сайт https://hexlet-products-store.vercel.app/
       2.Выбрать из фильтра несколько производитетей
-   expected-result: |
+    expected-result: |
       Отображаются товары с отфильтроваными производителями
-   actual-result: |
+    actual-result: |
       ничего не происходит, товары не отображаются
