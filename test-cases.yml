@@ -153,7 +153,7 @@
     Проверка на совместимость с последней версией браузера
   requirement: |
     При открытии в браузере сайт должен иметь внешний вид соответвуюший ожиданию
-    prerequisites:
+  prerequisites:
     Открыт браузер Google Chrome, Opera,Mozilla Firefox, Safari
   test-data: |
     Тестовые данные отсутсвуют
@@ -167,7 +167,7 @@
     Проверка на доступность мобильной версии
   requirement: |
     Сайт на мобильной версии должен отображаться корректно 
-    prerequisites:
+  prerequisites:
     Открыт Devtools
   test-data: |
     Мобильное устройство = iPhone X
