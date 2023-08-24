@@ -1,73 +1,75 @@
-- summary: |
-    Проверка поиска товара по ключевому слову
-- status: pass
+---
+test-cases:
+  - summary: |
+      Проверка поиска товара по ключевому слову
+  - status: pass
 
-- summary: |
-    Проверка поиска товара по категории
-- status: pass
+  - summary: |
+      Проверка поиска товара по категории
+  - status: pass
 
-- summary: |
-    Проверка фильтра товара
-- status: fail
+  - summary: |
+      Проверка фильтра товара
+  - status: fail
 
-- summary: |
-    Проверка отображения информаци о товаре
-- status: pass
+  - summary: |
+      Проверка отображения информаци о товаре
+  - status: pass
 
-- summary: |
-    Проверка добавления товара в корзину
-- status: pass
+  - summary: |
+      Проверка добавления товара в корзину
+  - status: pass
 
-- summary: |
-    Проверка оформления заказа
-- status: pass
+  - summary: |
+      Проверка оформления заказа
+  - status: pass
 
-- summary: |
-    Проверка на возможность очистить корзину
-- status: pass
+  - summary: |
+      Проверка на возможность очистить корзину
+  - status: pass
 
-- summary: |
-    Проверка на возможность очистить корзину
-- status: pass
+  - summary: |
+      Проверка на возможность очистить корзину
+  - status: pass
 
-- summary: |
-    Проверка на мультиязычность
-- status: fail
+  - summary: |
+      Проверка на мультиязычность
+  - status: fail
 
-- summary: |
-    Проверка перезагрузки страницы
-- status: fail
+  - summary: |
+      Проверка перезагрузки страницы
+  - status: fail
 
-- summary: |
-    Проверка на безопасность и защиту данных
-- status: pass
+  - summary: |
+      Проверка на безопасность и защиту данных
+  - status: pass
 
-- summary: |
-    Проверка на безопасность и защиту данных
-- status: pass
+  - summary: |
+      Проверка на безопасность и защиту данных
+  - status: pass
 
-- summary: |
-    Проверка на доступность на различных устройствах
-- status: pass
+  - summary: |
+      Проверка на доступность на различных устройствах
+  - status: pass
 
-- summary: |
-    Проверка на совместимость с последней версией браузера
-- status: fail
+  - summary: |
+      Проверка на совместимость с последней версией браузера
+  - status: fail
 
-- summary: |
-    Проверка на доступность мобильной версии
-- status: fail
+  - summary: |
+      Проверка на доступность мобильной версии
+  - status: fail
 
 bugreports:
-  - summary: |
+- summary: |
       При выборе фильтрации ничего не происходит 
-    environment: |
+environment: |
       Mozilla Firefox   116.0.1 (Официальная сборка) (64 бит)
-    Windows 11
-    steps-to-reproduce: |
+      Windows 11
+steps-to-reproduce: |
       1. Открыть сайт https://hexlet-products-store.vercel.app/
       2. Выбрать из фильтра несколько производитетей
-    expected-result: |
+expected-result: |
       отображаются товары с отфильтроваными производителями
-    actual-result: |
+actual-result: |
       ничего не происходит, товары нге отображаются
