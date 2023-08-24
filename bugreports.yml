@@ -1,0 +1,69 @@
+---
+- summary: |
+    При выборе языка "Russia", язык меняется не на всем сайте
+  environment: |
+    Mozilla Firefox   116.0.1 (Официальная сборка) (64 бит)
+    Windows 11
+  steps-to-reproduce: |
+    1. Открыть сайт https://hexlet-products-store.vercel.app/
+    2. Нажать на кнопку "Язык"
+    3. Выбрать язык "Russia"
+  expected-result: |
+    Язык поменялся на всем сайте
+  actual-result: |
+    Смена языка произошла не на всем сайте
+
+- summary: |
+    При переходе на другую страницу сайта, происходит перезагрузка страницы
+  environment: |
+    Mozilla Firefox   116.0.1 (Официальная сборка) (64 бит)
+    Windows 11
+  steps-to-reproduce: |
+    1. Открыть сайт https://hexlet-products-store.vercel.app/
+    2. Нажать на товар
+  expected-result: |
+    Страница не перезагружается
+  actual-result: |
+    Страница перезагружается
+
+- summary: |
+    На различных устройствах функционал и элементы не помещаются в экран и отображатся некорректно
+  environment: |
+    Mozilla Firefox   116.0.1 (Официальная сборка) (64 бит)
+    Windows 11
+  steps-to-reproduce: |
+    1. Открыть сайт https://hexlet-products-store.vercel.app/
+    2. Нажать F12 или Cntrl+Shift+I
+    3. Нажать на режим адаптивного дизайна
+    4. Выбрать устройство Ipad
+  expected-result: |
+    функционал и элементы помещаются в экран и отображатся корректно
+  actual-result: |
+    Графа "Поиск" вылазиет за пределы границ, фото товаров не соответвует правильным размерам
+
+- summary: |
+    Сайт не совместим снекоторыми версиями браузеров 
+  environment: |
+    Sagari 5.1 (Официальная сборка) (64 бит)
+    Windows 11
+  steps-to-reproduce: |
+    1. Открыть сайт https://hexlet-products-store.vercel.app/
+  expected-result: |
+    функционал и элементы помещаются в экран и отображатся корректно
+  actual-result: |
+    Сайт долго грузится и не открывается
+
+- summary: |
+    Сайт не доступен в мобильной версии 
+  environment: |
+    Mozilla Firefox   116.0.1 (Официальная сборка) (64 бит)
+    Windows 11
+  steps-to-reproduce: |
+    1. Открыть сайт https://hexlet-products-store.vercel.app/
+    2. Нажать F12 или Cntrl+Shift+I
+    3. Нажать на режим адаптивного дизайна
+    4. Выбрать устройство Iphone X
+  expected-result: |
+    функционал и элементы помещаются в экран и отображатся корректно
+  actual-result: |
+   функционал и элементы не помещаются на эран мобильного устройства   
