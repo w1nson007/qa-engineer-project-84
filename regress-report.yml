@@ -58,7 +58,7 @@ test-cases:
 
   - summary: |
       Проверка на доступность мобильной версии
-   status: fail
+    status: fail
    
 bugreports:
   - summary: |
