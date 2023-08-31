@@ -1,64 +1,64 @@
 ---
 - summary: |
       Проверка поиска товара по ключевому слову
-    status: pass
+  status: pass
 
 - summary: |
       Проверка поиска товара по категории
-    status: pass
+  status: pass
 
 - summary: |
       Проверка фильтра товара по производителю
-    status: pass
+  status: pass
 
 - summary: |
       Проверка отображения информаци о товаре
-    status: pass
+  status: pass
 
 - summary: |
       Проверка добавления товара в корзину
-    status: pass
+  status: pass
 
 - summary: |
       Проверка оформления заказа
-    status: pass
+  status: pass
 
 - summary: |
       Проверка на возможность очистить корзину
-    status: pass
+  status: pass
 
 - summary: |
       Проверка на отображение контента на различных языках
-    status: fail
+  status: fail
 
 - summary: |
       Проверка на безопасность и защиту данных
-    status: pass
+  status: pass
 
 - summary: |
       Проверка на доступность на различных устройствах
-    status: fail
+  status: fail
 
 - summary: |
       Проверка на совместимость с последней версией браузера
-    status: pass
+  status: pass
 
 - summary: |
       Проверка фильтра товара по цене
-    status: pass  
+  status: pass  
     
 - summary: |
       Проверка фильтра товара по имеющимся в наличии
-    status: pass
+  status: pass
 
 - summary: |
       Проверка переключение страниц отображения товаров
-    status: fail  
+  status: fail  
 
 - summary: |
       Проверка на удаление товаров из корзины
-    status: pass  
+  status: pass  
 
 - summary: |
       Проверка на оформление карточки товара
-    status: pass   
+  status: pass   
