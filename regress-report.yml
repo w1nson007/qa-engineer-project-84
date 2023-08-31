@@ -9,7 +9,7 @@ test-cases:
     status: pass
 
   - summary: |
-      Проверка фильтра товара
+      Проверка фильтра товара по производителю
     status: fail
 
   - summary: |
@@ -29,10 +29,6 @@ test-cases:
     status: pass
 
   - summary: |
-      Проверка на возможность очистить корзину
-    status: pass
-
-  - summary: |
       Проверка на отображение контента на различных языках
     status: fail
 
@@ -42,30 +38,44 @@ test-cases:
 
   - summary: |
       Проверка на доступность на различных устройствах
-    status: pass
+    status: fail
 
   - summary: |
       Проверка на совместимость с последней версией браузера
     status: pass
 
   - summary: |
-      Проверка на оформление карточки товара
-    status: pass 
+      Проверка фильтра товара по цене
+    status: pass  
+    
+  - summary: |
+      Проверка фильтра товара по имеющимся в наличии
+    status: pass
+
+  - summary: |
+      Проверка переключение страниц отображения товаров
+    status: fail 
 
   - summary: |
       Проверка на удаление товаров из корзины
     status: pass  
 
   - summary: |
-      Проверка переключение страниц отображения товаров
-    status: fail
+      Проверка на оформление карточки товара
+    status: pass   
 
-  - summary: |
-      Проверка фильтра товара по имеющимся в наличии
-    status: pass
-
-  - summary: |
-      Проверка фильтра товара по цене
-    status: pass  
     
-bugreports: []
+bugreports: 
+  - summary: |
+    При выборе фильтрации по производителям не выводится список товаров по заданому фильтру 
+  environment: |
+    Mozilla Firefox   116.0.1 (Официальная сборка) (64 бит)
+    Windows 11
+  steps-to-reproduce: |
+    1. Открыть сайт https://hexlet-products-store.vercel.app/
+    2. В фильтре выбираем производителей
+  expected-result: |
+    Выводится список отфильтрованных товаров по производителю
+  actual-result: |
+    поиск по фильтру не осуществляется
+    
